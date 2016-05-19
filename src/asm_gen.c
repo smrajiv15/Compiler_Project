@@ -1,3 +1,6 @@
+/* This file creates the ASM code from Abstract sysntax tree on the fly
+ */
+
 #include "parser.h"
 #include "scanner_codes.h"
 #include <string.h>
