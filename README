@@ -1,0 +1,28 @@
+Steps to run the Code Generation Code:
+--------------------------------------
+
+1. first build all the executables needed for the Code Generation Compiler project.
+   
+   Command: bash ./build.sh
+
+   Output: tl_compiler ELF file will be created. 
+
+2. Next, run the exec shell script with the below command.
+
+   Command: bash ./exec.sh <filename.tl>
+
+   Output: Output of the Code Generation code will be a list of files as below:
+
+		1. <basename>.tok file get the output of the scanner phase i.e list of tokens. In case of any Error in the
+		   program, error messages will be redirected in to this file.
+		2. AST.dot file for visualizing the Annotated Abstract Syntax Tree. Corresponding PNG file is automatically
+		   created after that.
+                3. Control_Flow.dot file helps us in visualizing the control flow of the program corresponding to each of the
+		   block.Corresponding PNG file of the control flow graph will be created after the succesfull Compilation of the
+		   program.
+		4. Assembly_Code.s file is created. Which contains the assembly instructions to execute in the MIPS simulator.
+ 
+           All these output files will be stored in the current working directory i.e. "workdir".
+
+   NOTE: The tl file given while running the exec script should be in the present working directory for properly creating the .tok
+	 and the PNG files. 
