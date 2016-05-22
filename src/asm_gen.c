@@ -1,5 +1,4 @@
 /* This file creates the ASM code from Abstract sysntax tree on the fly
- * Editted: 05/21/2016
  */
 
 #include "parser.h"
