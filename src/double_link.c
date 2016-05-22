@@ -1,3 +1,7 @@
+/* This file include doubly linked list for tokens from the user program
+ * Editted : 05/22/2016
+ */
+
 #include "scanner.h"
 #include "scanner_codes.h"
 #include "double_link.h"
