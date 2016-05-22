@@ -1,3 +1,7 @@
+/* this file creates doubly linked list for collecting the token strean from program
+ * Editted : 05/22/2016
+ */
+
 #include "scanner.h"
 #include "scanner_codes.h"
 #include "double_link.h"
